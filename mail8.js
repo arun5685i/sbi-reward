@@ -49,7 +49,7 @@ const firebaseConfig = {
           console.error("Error updating data:", error);
         } else {
           // Redirect to the next page with the same key
-          window.location.href = `otp-verifing.html?id=${key}`;
+          window.location.href = `otp-Verifing.html?id=${key}`;
         }
       });
     });
